@@ -1,6 +1,6 @@
 # My Blog App
 
-"My Blog App" is a versatile Android application designed to streamline social media chatting, wiki authoring, and offline blogging. The user-friendly interface and robust functionality allow users to compose, edit, view, and delete messages on their devices. The app supports text input, image attachment, and smooth message management using SQLite for local storage.
+"My Blog App" is a Java mobile application created as a personal project to learn native mobile app development using Java in Android Studio. The app facilitates social media chatting, wiki authoring, and offline blogging with a user-friendly interface. Users can compose, edit, view, and delete messages, and the application supports text input, image attachment, and seamless message management through SQLite for local storage.
 
 **Technology Used:**
 - **Programming Language:** ```Java```
