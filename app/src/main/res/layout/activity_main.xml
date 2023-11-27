@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+
+    <!-- Move the "My Blog App" TextView to the top -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Blog App"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+    </TextView>
+
+    <ScrollView
+        android:id="@+id/blogsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="8dp"
+                android:hint="Type your blog name here"
+                android:inputType="text"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/textBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type your blog body here"
+                android:inputType="textMultiLine"
+                android:minLines="4"
+                android:padding="20dp" />
+
+            <!-- Button for uploading images -->
+            <Button
+                android:id="@+id/uploadImageBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Upload Image" />
+
+            <!-- ImageView to display the uploaded image -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/placeholder_image" />
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Add Blog" />
+
+            <TextView
+                android:id="@+id/blogsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text=" My Blogs "
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:layout_marginBottom="20dp">
+            </TextView>
+
+            <!-- Search bar and button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:id="@+id/searchEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:hint="Search Blogs" />
+
+                <Button
+                    android:id="@+id/searchBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search" />
+            </LinearLayout>
+
+            <!-- Move this LinearLayout inside the first LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/blogsContainer"
+                android:orientation="vertical"/>
+
+            <Button
+                android:id="@+id/selectAllBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Select All" />
+
+            <Button
+                android:id="@+id/deleteSelectedBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Delete Selected" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
